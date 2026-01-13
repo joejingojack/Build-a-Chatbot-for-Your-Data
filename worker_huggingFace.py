@@ -24,7 +24,7 @@ def init_llm():
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "YOUR API KEY"
 
     # repo name for the model
-    model_id = "tiiuae/falcon-7b-instruct"
+    model_id = "tiiuae/falcon-7b-instruct" # or "cnicu/t5-small-booksum" because it's a free model
     # load the model into the HuggingFaceHub
     llm_hub = HuggingFaceHub(repo_id=model_id, model_kwargs={"temperature": 0.1, "max_new_tokens": 600, "max_length": 600})
 

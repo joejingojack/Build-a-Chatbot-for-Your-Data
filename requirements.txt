@@ -1,19 +1,27 @@
+# Web server
 Flask==3.1.0
-Flask_Cors==5.0.0
-pdf2image==1.17.0
-chromadb==0.4.24 
+Flask-Cors==5.0.0
+
+# PDF processing
 pypdf==5.2.0
-tiktoken==0.8.0
-ibm-watsonx-ai==1.1.20
-langchain-ibm==0.3.4
-langchain==0.3.7
-pydantic==2.10.1
-pandas==1.5
-atlassian-python-api==3.36.0
-huggingface-hub==0.16.4
+
+# LangChain ecosystem (LOCKED)
+langchain==1.2.0
+langchain-core==1.2.1
+langchain-community==0.4.1
+
+# Embeddings
 torch==2.0.1
 sentence-transformers==2.2.2
-InstructorEmbedding==1.0.0
-p4python==2023.1.2454917
-lxml==4.9.2
-bs4==0.0.1
+huggingface-hub==0.16.4
+
+# Vector DB (NumPy 2.x safe)
+chromadb==0.4.24
+
+# Data
+numpy==1.26.4
+pandas==1.5.3
+
+# Utilities
+pydantic==2.10.1
+tiktoken==0.8.0

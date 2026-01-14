@@ -92,4 +92,3 @@ def process_prompt(user_prompt: str) -> str:
     )
 
     return response
-
